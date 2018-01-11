@@ -1,0 +1,328 @@
+/*
+* @Author: chen
+* @Date:   2017-12-26 14:07:13
+* @Last Modified by:   chen
+* @Last Modified time: 2018-01-11 09:17:36
+*/
+
+@import url("base.css");
+
+@font-face {
+  font-family: 'iconfont';  /* project id 535757 */
+  src: url('http://at.alicdn.com/t/font_535757_s59r2ojdb8vq85mi.eot');
+  src: url('http://at.alicdn.com/t/font_535757_s59r2ojdb8vq85mi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_535757_s59r2ojdb8vq85mi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_535757_s59r2ojdb8vq85mi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_535757_s59r2ojdb8vq85mi.svg#iconfont') format('svg');
+}
+
+i{
+	font-style: normal;
+}
+
+/* 关于开始*/
+.about{
+	width: 100%;
+	padding:120px 0;
+}
+.about_head{
+	max-width:600px;
+	margin: 0 auto 50px;
+}
+.about_head h1{
+	font-size: 36px;
+	font-weight: 700;
+	color: #0d0d0d;
+	text-align: center;
+}
+.about_head p{
+	font-size: 14px;
+	line-height: 22px;
+	color: #55575d;
+	text-align: center;
+}
+.about_img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.about_text h2{
+	font-size: 36px;
+	font-weight: 700;
+	color: #0d0d0d;
+	margin-top: 0;
+}
+.about_text p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #55575d;
+}
+/* 关于结束*/
+
+/* 技能开始 */
+.jineng{
+	width: 100%;
+	background: #F3F3F4;
+	padding: 120px 0 90px;
+}
+.jineng_box{
+	height: 222px;
+	background: #fff;
+	padding: 30px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-bottom: 30px;
+	transition: all 0.25s;
+}
+.jineng_box:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 5px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.jineng_box_icon{
+	font-family: 'iconfont'; 
+	font-size: 32px;
+	color: #1A1A1A;
+}
+.jineng_box h4{
+	font-size: 24px;
+	color: #0d0d0d;
+	width: 100%;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 0;
+}
+.jineng_box p{
+	font-size: 14px;
+	color: #55575d;
+	width: 100%;
+	text-align: center;
+}
+/* 技能结束 */
+
+/* 作品开始 */
+.zuopin{
+	width: 100%;
+	padding: 120px 0;
+}
+.zuopin_menu{
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.zuopin_menu li{
+	display: inline-block;
+}
+.zuopin_menu li a{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #0D1218;
+}
+li.zuopin_list{
+	padding-bottom: 15px;
+}
+.zuopin_img_box{
+	height: 266px;
+	position: relative;
+}
+.zuopin_img_box::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.zuopin_img_box img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.zuopin_yiru{
+	width: 201px;
+	height: 109px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	opacity: 0;
+	z-index: 2;
+}
+.zuopin_yiru_lianjie{
+	display: inline-block;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	background: #dddcdc;
+	text-align: center;
+	line-height: 36px;
+	text-decoration: none;
+}
+.zuopin_yiru_icon{
+	font-size: 16px;
+	color: #0d1218;
+	font-family: 'iconfont'; 
+}
+.zuopin_yiru_lianjie:hover{
+	background: #00bfff;
+	text-decoration: none;
+}
+.zuopin_yiru_lianjie:hover .zuopin_yiru_icon{
+	color: #fff;
+}
+.zuopin_yiru h2{
+    font-size: 18px;
+    color: #fff;
+}
+.zuopin_yiru p{
+    font-size: 16px;
+    color: #fff;
+}
+.zuopin_list:hover .zuopin_img_box::after{
+	opacity: 1;
+}
+.zuopin_list:hover .zuopin_yiru{
+	opacity: 1;
+}
+/* 作品结束 */
+
+/* 联系我们开始 */
+.lianxi{
+	width: 100%;
+	padding: 120px 0 90px;
+	background: #F3F3F4;
+}
+.contact_input{
+	width: 100%;
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #a3a8ab;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+.contact_submit{
+	padding: 15px 30px;
+	border-radius: 3px;
+	background: #1A1A1A;
+	color: #fff;
+	font-weight: 500;
+	font-size: 18px;
+	border: 0;
+	margin-bottom: 30px;
+}
+.fangshi1{
+	margin-bottom: 30px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.fangshi_icon_box{
+	margin-right: 15px;
+	float: left;
+}
+.fangshi1 span{
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	text-align: center;
+	line-height: 60px;
+	display: block;
+}
+.fangshi_icon{
+	font-size: 36px;
+	color: #55575d;
+	font-family: 'iconfont';
+}
+.fangshi_icon_text p{
+	font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #959595;
+}
+/* 联系我们结束 */
+
+/* 底部开始 */
+footer{
+	width: 100%;
+	padding: 42px 0;
+	background: #0d1218;
+	position: relative;
+}
+footer p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	padding: 6px 0;
+	margin: 0;
+}
+.dubu_icon_box{
+	float: right;
+}
+.jiantou{
+	width: 52px;
+	height: 52px;
+	background: url('../img/jiantou_1.png') no-repeat center center;
+	position: absolute;
+	left: 50%;
+	top: -26px;
+}
+.jiantou:hover{
+	background: url('../img/jiantou_03.png') no-repeat center center;
+	transition: all 0.5s;	
+}
+/* 底部结束 */
+
+/* 移动端 <768px */
+@media screen and (max-width:768px){
+	.about_img{
+		margin-bottom: 30px;
+	}
+	li.zuopin_list{
+		padding-right: 15px;
+	}
+}
+/* 平板端 768-992 */
+@media screen and (min-width:768px) and (max-width:992px){
+	.about_img{
+		margin-bottom: 30px;
+	}
+	li.zuopin_list{
+		padding-right: 0;
+	}
+}
+/* pc小屏 992-1200 */
+@media screen and (min-width:992px) and (max-width:1200px){
+    .jineng_box{
+        max-width: 360px;
+	}
+	.zuopin_img_box{
+		max-width: 375px;
+	}
+	li.zuopin_list{
+		padding-right: 0;
+	}
+}
+/* pc大屏 >1200 */
+@media screen and (min-width:1200px){
+    .jineng_box{
+        max-width: 360px;
+	}
+	.zuopin_img_box{
+		max-width: 375px;
+	}
+	li.zuopin_list{
+		padding-right: 0;
+	}	
+}
